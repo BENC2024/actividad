@@ -6,197 +6,91 @@
 
    <title>Mi página web sobre restauración</title>
    <link rel="icon" href="img/tiburon.png" type="image/x-icon">
-   <link rel="shortcut icon" href="img/tiburon.png" type="image/x-icon">
   
    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
    <script src="js/bootstrap.bundle.min.js"></script>
 
-   <style>
-      body {
-        background-image: url("img/vaquero.jpg");
-        background-size: cover; /* Ajustar la imagen al tamaño del elemento */
-        background-repeat: no-repeat; /* Evitar que la imagen se repita */
-        opacity: 1;
-      }
-    </style>
-
       <!--
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
       -->
+   <style>
+      body{
+         background-color: #000;
+         background-image: url("img/otros/HD-wallpaper-technology-circuit.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+   </style>
+
 </head>
 
 <body>
-  <!--El offcanvas es una barra lateral sin necesidad de actualizar pagina-->
-  <button class="btn btn-primary mt-4" data-bs-toggle="offcanvas" data-bs-target="#intro">Inicio</button>
+   <!--El offcanvas es una barra lateral sin necesidad de actualizar pagina-->
 
-  <div class="offcanvas offcanvas-start" id="intro">
-    <div class="offcanvas-header">
-      <div class="offcanvas-title">
-        <button class="btn btn-danger" data-bs-dissmis="offcanvas"></button>
+   <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header bg-success bg-gradient text-white">
+         <h5><img src="img/Icon/list.svg" alt="list">Menu principal</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </div>
 
-    <div class="offcanvas-body">
-      <p>Imagenes relacionadas</p>
-      <p>Videos relacionados</p>
-      <p>Formulario PQRS</p>
-      <p>Contactos</p>
-      <p>Presentación</p>
-    </div>
-
-    <div class="container-fluid p-5 bg-primary text-white text-center"> <!--p(top,rigth,left,botom)-->
-      <h1>Aplicaciones web </h1>
-      <i>En esta pagina se relaciona con gustos sobre restauración y diseños</i>
-    </div>
-
-  </div>
-
-     <div class="p-5 text-white text-center"> <!--p(top,rigth,left,botom)-->
-          <i><h2>Algunas imagenes sobre dicha temática</h2></i>
-     </div>
-  
-        <div class="row p-2">
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/cortador.jpg" class="card-img-top" alt="cortador">
-              <div class="card-body">
-                <i class="card-text">Imagen de como se ve un rayador de queso antes de su restauración</i>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/linterna.jpg" class="card-img-top" alt="linterna">
-              <div class="card-body">
-                <i class="card-text">Linterna antigua antes de su restauración</i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/ps2.jpg" class="card-img-top" alt="ps2">
-              <div class="card-body">
-                <i class="card-text">Restauración de una play station 2 </i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/registradora.jpg" class="card-img-top" alt="registradora">
-              <div class="card-body">
-                <i class="card-text">Imagen de la restauración de una maquina registradora antigua</i>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
+      <div class="offcanvas-body fs-3 bg-success bg-gradient pt-5">
+         <p><a class=" link-offset-2 link-underline link-underline-opacity-0 text-white" href="paginas/imagenes.html"> <i>Imagenes relacionadas</i> </a></p>
+         <p><a class=" link-offset-2 link-underline link-underline-opacity-0 text-white" href="paginas/videos.html"> <i>Videos relacionadas</i> </a></p>
+         <p><a class=" link-offset-2 link-underline link-underline-opacity-0 text-white" href="paginas/formulario.html"> <i>Formulario PQRS</i> </a></p>
+         <p><a class=" link-offset-2 link-underline link-underline-opacity-0 text-white" href="paginas/otros.html"> <i>otros</i> </a></p>
+         <p><a class=" link-offset-2 link-underline link-underline-opacity-0 text-white" href="https://benc2024.github.io/hojaDeVida/"> <i>Hoja de vida</i> </a></p>
       </div>
-  
-      <div class="container-fluid">
-  
-        <div class="row p-2">
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/uvas.jpg" class="card-img-top" alt="uvas">
-              <div class="card-body">
-                <i class="card-text">Imagen de antiguo extractor de jugos y vinos</i>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/computadores.jpg" class="card-img-top" alt="computadores">
-              <div class="card-body">
-                <i class="card-text">Imagen del armado de un computador</i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/horno.jpg" class="card-img-top" alt="horno">
-              <div class="card-body">
-                <i class="card-text">Restauración de horno cocina antiguo de juguete</i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <img src="img/Protoboard_circuito_multivibradores.jpg" class="card-img-top" alt="circuito">
-              <div class="card-body">
-                <i class="card-text">Aprendizaje de diseño de circuitos</i>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
+
+      <div class="container-fluid p-2 bg-primary text-center text-white"> <!--p(top,rigth,left,botom)-->
+         <h5>Aplicaciones y servicios para la nube</h5>
+         <i>En esta pagina se relaciona con gustos sobre restauración y diseños</i>
       </div>
-  
-      <div class="container-fluid">
-  
-        <div class="row text-center p-2">
-          <div class="p-5 text-white text-center"> <!--p(top,rigth,left,botom)-->
-            <i><h2>Algunos videos muy interesante sobre diseño o reparación</h2></i>
-          </div>
-        </div>
-  
-        <div class="row text-center p-2">
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <a href="https://www.youtube.com/watch?v=1NRFL6YYtzg" target="_blank">
-                <img src="img/miniaturas/componentes.jpg" class="card-img-top" alt="componentes">
-              </a>
-              <div class="card-body">
-                <i class="card-text">Aprendizaje sobre componentes electronicos</i>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <a href="https://www.youtube.com/watch?v=pNVlLM8Ysaw" target="_blank">
-                <img src="img/miniaturas/computador.jpg" class="card-img-top" alt="computador">
-              </a>
-              <div class="card-body">
-                <i class="card-text">Arquitectura de computadores</i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <a href="https://www.youtube.com/watch?v=PE0q76vg-FE" target="_blank">
-                <img src="img/miniaturas/helado.jpg" class="card-img-top" alt="helado">
-              </a>
-              <div class="card-body">
-                <i class="card-text">Heladera antigua</i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col m-2 text-center">
-            <div class="card" style="width: 18rem;">
-              <a href="https://www.youtube.com/watch?v=Mae4t36lOjw" target="_blank">
-                <img src="img/miniaturas/ps2.jpg" class="card-img-top" alt="ps2">
-              </a>
-              <div class="card-body">
-                <i class="card-text">Reparación de una PS2</i>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
+
+      <div class="container-fluid text-bg-dark text-center">
+         <div class="row text-white">
+               <div class="p-1"> <!--p(top,rigth,left,botom)-->
+                  <i><h5>Información de contacto: 3178917347</h5></i>
+               </div>
+               <div class="p-1"> <!--p(top,rigth,left,botom)-->
+                  <i><h5>Correo: benarvaez94@soy.sena.edu.co</div>
+               </div>
+         </div>
       </div>
+   </div>
+
+   <!--ESTA VA A SE LA PRESENTACION DE LA PAGINA-->
+   <div class="container-fluid p-5">
+
+      <div class="row">
+         <div class="text-white text-center col-lg-8 col-md-6 col-sm-12 mb-3">
+            <div class="col-12 fs-1 p-5 mb-3 text-white text-center bg-primary bg-gradient border border-light rounded-2"> <!--p(top,rigth,left,botom)-->
+               <i><h1>Diseño y restauración de dispositivos tecnológicos</h1></i>
+            </div>
+            
+            <div class="col-12 fs-3 pb-5">
+                  Esta página muestra el gusto por los canales de aprendizaje
+                  y canales relacionados a la restauración de objetos,
+                  además de otros temas de interesa como lo son los canales de 
+                  tutoriales, de arquitectura de computadores, diseño
+                  entre otros aspectos con dicha temática muy interesantes.
+            </div>
+            <div class="align-items-center">
+               <button class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                  <h5>Menu principal</h5>
+               </button>
+            </div>
+         </div>
+         <div class="pt-2 pb-2 col-lg-4 col-md-6 border border-warning rounded-2">
+               <img width="55%" src="img/limpieza-mantenimiento-pc.webp" class="mt-1 rounded float-start mx-auto d-block" alt="...">
+               <img width="55%" src="img/gumball.jpg" class="mt-1 rounded float-end mx-auto d-block" alt="...">
+               <img width="55%" src="img/teclado amarillo.jpg" class="mt-1 rounded float-start mx-auto d-block" alt="...">
+               <img width="55%" src="img/rayador.jpg" class="mt-1 rounded float-end mx-auto d-block" alt="...">
+         </div>
+      </div>
+
+   </div>
+
 
 </body>
 
