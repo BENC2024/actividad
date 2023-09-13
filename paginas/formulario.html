@@ -7,7 +7,7 @@
    <title>Formulario</title>
    <link rel="icon" href="../img/Icon/file-earmark-text-fill.svg" type="image/x-icon">
   
-   <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/bootstrap.min.css" rel="stylesheet">
    <script src="../js/bootstrap.bundle.min.js"></script>
 
       <!--
@@ -25,52 +25,50 @@
 </head>
 
 <body>
-
-  <form>
-    <div class="container-fluid d-flex justify-content-center bg-success">
-      <header>
-        <h1>Formulario PQRS</h1>
-      </header>
-    </div>
-    
-    <section>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <aside>
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-12">
-                <label class="form-label">PQRS:</label>
-              </div>
-              <div class="col-lg-9 col-md-9 col-sm-12">
-                <select class="form-select" name="tipo">
-                  <option value="peticion">Peticion</option>
-                  <option value="queja">Queja</option>
-                  <option value="reclamo">Reclamo</option>
-                  <option value="sugerencia">Sugerencia</option>
-                </select>
-              </div>
-            </div>
-
-            <label class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="nombre">
-            <label class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" name="correo">
-          </aside>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <article>
-            <label class="form-label">Mensaje</label>
-            <textarea class="form-control" name="mensaje" rows="4"></textarea>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </article>
-        </div>
-
+   <form class="text-white">
+      <div class="container-fluid p-3 text-center bg-success">
+         <header>
+            <i><h2>Formulario PQRS</h2></i>
+         </header>
       </div>
 
-    </section>
-  
-  </form>
+      <section class="container-fluid position-relative">
+         <div class="row p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <aside>
+                  <div class="row">
+                     <div class="col-lg-3 col-md-3 col-sm-12">
+                        <label class="form-label"><i><h4>PQRS:</h4></i></label>
+                     </div>
+                     <div class="col-lg-9 col-md-9 col-sm-12">
+                        <select class="form-select" name="tipo">
+                           <option value="peticion"><i><h4>Peticion</h4></i></option>
+                           <option value="queja"><i><h4>Queja</h4></i></option>
+                           <option value="reclamo"><i><h4>Reclamo</h4></i></option>
+                           <option value="sugerencia"><i><h4>Sugerencia</h4></i></option>
+                        </select>
+                     </div>
+                  </div>
 
+                  <label class="form-label"><i><h4>Nombre:</h4></i></label>
+                  <input type="text" class="form-control" name="nombre">
+                  <label class="form-label"><h4><i>Correo Electrónico:</i></h4></label>
+                  <input type="email" class="form-control" name="correo">
+               </aside>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <article>
+                  <label class="form-label"><i><h4>Mensaje:</i></h4></label>
+                  <textarea class="form-control" name="mensaje" rows="4"></textarea>
+                  <div class="pt-4">
+                     <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+   </form>
 </body>
 
 </html>
